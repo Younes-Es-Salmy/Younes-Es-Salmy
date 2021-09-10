@@ -1,0 +1,190 @@
+
+body {
+    background-color: #000;
+}
+.OptionsWin{
+    position: absolute;
+    top: calc(50% - 125px);
+    left:calc(50% - 250px);
+    float:right;
+    width:500px;
+    height:250px;
+    background-color: #302E2C;
+    z-index: 4;
+    border-radius: 10px;
+}
+.title{
+    font-size: 45px;
+    font-family: arial;
+    text-align: center;
+    color: #999897;
+    background-color: #41403D;
+    font-weight: bolder;
+    border-bottom: 5px solid #262523;
+}
+.countDown{
+    width: 95%;
+    margin:auto;
+    border-bottom: 1px solid #999897;
+}
+.timeSelc{
+    margin: 0 10px 10px 10px;
+    background-color:#2F2C27;
+    width:70px;
+    height: 45px;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 25px;
+    color:#9B9A98;
+    outline: none;
+    border:none;
+    border-radius: 2px;
+    padding-left: 10px;
+    border:1px solid #9B9A98;
+}
+.start{
+    width:auto;
+    padding: 0 10px;
+}
+.hours{
+    color:#999897;
+    font-family: arial;
+    font-weight: bold;
+     font-size: 25px;
+}
+.capTimeCont{
+    background-color: #363531;
+    width: 800px;
+    height: 50px;
+    margin:0 auto;
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+}
+#capTimeContW{
+    background-color: #e8e8e8;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid #000;
+
+}
+#capturedPiecesW{
+    background-color: #e8e8e8;
+}
+#capturedPiecesW img{
+    border :1px solid black;
+}
+#capTimeContW #timerW,#capTimeContW .player{
+    background-color: #fff;
+}
+#capTimeContW #timerW{
+    border:1px solid #000;
+}
+#timerW p,#capTimeContW .player p{
+    color: #363531;
+}
+.timer{
+    position: relative;
+    float: right;
+    height: 80%;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #2F2C27;
+    color:#9B9A98;
+    top: calc(50% - calc(85% / 2));
+    margin-right:5px;
+    border:1px solid #fff;
+}
+.timer p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight:bolder;
+    font-size: 30px;
+    font-family: arial;
+}
+.player{
+    float:left;
+    font-family: arial;
+    width:150px;
+    border-radius: 0;
+    margin-left: 5px;
+    border:none;
+}
+.capturedPieces{
+    display:inline;
+    background-color:#363531;
+    border-radius: 0;
+    float: left;
+    margin-left: 0px;
+    position: relative;
+    width: auto;
+    border:0;
+}
+.capturedPieces img{
+    width: 25px;
+    height:25px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border:1px solid #fff;
+    margin: 0 1px;
+}
+.board {
+    /*border-collapse: collapse;*/
+    border-spacing: 0;
+    padding: 0;
+    position: relative;/* necessary for the position of it's childs*/
+    margin:0 auto;
+    background-color: #000;
+}
+
+.board td ,.promotion td{
+    width: 100px;
+    height: 100px;
+    position: relative;/* necessary for the position of it's childs*/
+    box-sizing:border-box;
+}
+
+.piece {
+    display:block;
+    margin:0 auto;
+    padding: 0;
+}
+.moveCircle{
+    position: absolute;
+    width:35px;
+    height: 35px;
+    border-radius:50%;
+    box-sizing:border-box;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-color: rgba(0,0,0,0.2);
+}
+.cellName{
+    position: absolute;
+    float: left;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: arial;
+}
+#pos {
+    color:#fff;
+    font-size: 25px;
+}
+.promotion{
+    box-sizing:border-box;
+    position:absolute;
+    margin:0;
+    padding: 0;
+    border-spacing: 0;
+    background-color: transparent;
+}
+.promotion td{
+    box-sizing:border-box;
+    box-shadow: 0px 10px 15px #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+}

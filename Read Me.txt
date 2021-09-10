@@ -1,0 +1,8 @@
+(*) Français :
+-Cette application web est développée par Younes Essalmy de TDI 202 GA (2020/2021) OFPPT (Institut Spécialisé de Technologie Appliquée Hay Al Adarissa - Fes).
+-Cette application Web est un jeu d'échecs qui peut être joué entre deux joueurs après avoir réglé le temps pour chaque joueur et si le mat ne se produit pas avant que le joueur ne gagne son adversaire.
+-Pour commencer un autre tour, il suffit de rafraîchir la page.
+(*) English :
+-This web application is developed by Younes Essalmy from TDI 202 GA (2020/2021) OFPPT (Specialized Institute of Applied Technology Hay Al Adarissa - Fes).
+-This web application is a chess game that can be played between tow players after setting the time for each player and if checkmate doesn't happen before ones player's time his opponent wins.
+-To start an other turn just refresh the page.

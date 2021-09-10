@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>JS</title>
+    </head>
+    <body>
+      <div class="OptionsWin" id="OptionWin">
+          <p class="title"id="title">Jeu d'échec</p>
+          <center>
+          <div class="countDown" id="countDown">
+
+              <select class="timeSelc" id="timeSelcHours">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <font class="hours">H</font>
+              <select class="timeSelc" id="timeSelcMins">
+                 <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="30">30</option>
+              </select>
+              <font class="hours">M</font>
+              <button class="timeSelc start" id="start" onclick="start()">DÉBUT</button>
+               </center>
+          </div>
+          
+      </div>
+      <div class = "game" id="game">
+        <div class = "capTimeCont" id="capTimeContB">
+            <div class="timer player"><p>NOIR</p></div>
+            <div class="timer capturedPieces" id="capturedPiecesB">
+             
+            </div>
+            <div class="timer" id="timerB">
+                <p id="timeLeftB">00:00</p>
+            </div>
+        </div>
+        <table class="board" id="board"></table>
+         <div class = "capTimeCont" id="capTimeContW">
+            <div class="timer player"><p>BLANC</p></div>
+            <div class="timer capturedPieces" id="capturedPiecesW">
+             
+            </div>
+            <div class="timer" id="timerW">
+                <p id="timeLeftW">00:00</p>
+            </div>
+        </div>
+      </div>
+       <br>
+       <span id="pos"></span>
+
+       <script src="pieces.js"></script>
+       <script src="script.js"></script>
+       
+    </body>
+</html>
